@@ -298,6 +298,111 @@ nav {
   color: var(--secondary-color);
 }
 
+/* Leadership Section */
+.leadership {
+  padding: 100px 0;
+}
+
+.leadership-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.leader-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.leader-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 243, 255, 0.1);
+  border-color: var(--primary-color);
+}
+
+.leader-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.leader-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.leader-card:hover .leader-image img {
+  transform: scale(1.05);
+}
+
+.leader-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 243, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.leader-card:hover .leader-overlay {
+  opacity: 1;
+}
+
+.social-links a {
+  color: #fff;
+  font-family: var(--font-heading);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 0 5px;
+  font-size: 0.8rem;
+}
+
+.social-links a:hover {
+  background: var(--primary-color);
+  color: #000;
+}
+
+.leader-info {
+  padding: 25px;
+}
+
+.leader-info h3 {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+.leader-role {
+  display: block;
+  color: var(--primary-color);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.leader-bio {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.5;
+}
+
 /* About Section */
 .about {
   padding: 100px 0;
